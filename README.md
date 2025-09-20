@@ -60,7 +60,7 @@ automated_attendance_system/
 
 ---
 
-## ⚙️ Installation  
+## Installation  
 
 ### 1. Prerequisites  
 - **Ubuntu 20.04 / 22.04** with **ROS2 Foxy/Humble**  
@@ -106,7 +106,7 @@ Press **`q`** in the image window to quit.
 
 ---
 
-## 📊 Output  
+## Output  
 
 - `attendance.xlsx` → Logs attendance with  
   - Timestamp  
