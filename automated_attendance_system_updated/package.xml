@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>automated_attendance_system</name>
+  <version>0.1.0</version>
+  <description>Automated Attendance System using ROS2, OpenCV, and face recognition</description>
+  <maintainer email="manvendrapsingh780@gmail.com">Manvendra</maintainer>
+  <license>MIT</license>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+</package>
