@@ -138,7 +138,7 @@ Press **`q`** in the image window to quit.
 
 ---
 
-## 👨‍💻 Authors  
+## Authors  
 - **Manvendra Pratap Singh**  
 
 --- 
