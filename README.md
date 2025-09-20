@@ -90,7 +90,7 @@ pip install -r requirements.txt
 
 ### 1. Clone and build the package  
 ```bash
-git clone https://github.com/<your-username>/automated_attendance_system.git
+git clone https://github.com/Manvendra199922/ROS2-based-automated-attendance-system.git
 cd automated_attendance_system
 colcon build
 source install/setup.bash
