@@ -39,6 +39,22 @@ The project is structured into **ROS2 nodes** that communicate through topics:
 
 ---
 
+## Algorithms & Techniques Used
+
+- **Face Detection** → Implemented with Haar Cascade Classifier from OpenCV for locating faces in video frames.
+- **Face Recognition** → Uses the face_recognition library, built on dlib’s deep learning model, which extracts 128-dimensional encodings for each face.
+- **Face Matching** → Recognition is performed by computing the Euclidean distance between encodings. A match score = 1 – distance is derived for easier interpretation.
+- **Anti-Spoofing Check** → A color variance–based method ensures that flat images (e.g., photos shown to the camera) are rejected, reducing spoof attempts.
+- **Thresholding** → Only matches with a score above 0.60 are accepted, balancing accuracy and reliability.
+- **Attendance Logging** → Attendance is updated in an Excel sheet (openpyxl) with timestamp, date, student name, and match score.
+- **ROS2 Middleware** → ROS2 topics provide modular communication between nodes, ensuring scalability (e.g., replacing camera source or adding cloud logging without changing core logic).
+- **Data Storage** →
+  - **attendance.xlsx** → Central attendance record
+  - **attendance_record** → Annotated face images with overlayed names and scores
+  - **face_detected** → Raw cropped face snapshots for debugging
+
+--
+
 ## Project Structure  
 ```
 automated_attendance_system/
@@ -90,7 +106,7 @@ pip install -r requirements.txt
 
 ### 1. Clone and build the package  
 ```bash
-git clone https://github.com/Manvendra199922/ROS2-based-automated-attendance-system.git
+git clone https://github.com/<your-username>/automated_attendance_system.git
 cd automated_attendance_system
 colcon build
 source install/setup.bash
