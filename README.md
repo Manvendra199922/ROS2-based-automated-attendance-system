@@ -53,7 +53,7 @@ The project is structured into **ROS2 nodes** that communicate through topics:
   - **attendance_record** → Annotated face images with overlayed names and scores
   - **face_detected** → Raw cropped face snapshots for debugging
 
---
+---
 
 ## Project Structure  
 ```
